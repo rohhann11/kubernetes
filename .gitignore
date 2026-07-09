@@ -1,12 +1,79 @@
-```
+```yaml
+# Helm/chart-specific ignores
+charts/
+*.tgz
+*.tar.gz
+templates/_helpers.tpl
+secrets.yaml
+values.local.yaml
+override-*.yaml
+
 # Dependencies
 node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
+.Python
 
-# Editors
-.vscode/
+# Build artifacts
+dist/
+build/
+target/
+out/
+
+# Logs
+*.log
+*.out
 
 # Environment
 .env
 .env.local
 *.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
