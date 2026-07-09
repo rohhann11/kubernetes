@@ -4,9 +4,9 @@
 replicaCount: 1
 
 image:
-  repository: ml-app
+  repository: ohhann/kubernetes-api-gateway
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
