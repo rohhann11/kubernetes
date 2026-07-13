@@ -31,7 +31,7 @@ apiGateway:
   port: 5000
   serviceType: LoadBalancer
   image:
-    repository: rohhann11/kubernetes-ml-app-api-gateway
+    repository: rohhann/kubernetes-ml-app-api-gateway
     tag: latest
   resources:
     limits:
@@ -46,7 +46,7 @@ mlPrediction:
   name: ml-prediction
   port: 5001
   image:
-    repository: rohhann11/kubernetes-ml-app-ml-prediction-service
+    repository: rohhann/kubernetes-ml-app-ml-prediction
     tag: latest
   resources:
     limits:
@@ -61,7 +61,7 @@ modelTraining:
   name: model-training
   port: 5002
   image:
-    repository: rohhann11/kubernetes-ml-app-model-training-service
+    repository: rohhann/kubernetes-ml-app-model-training-service
     tag: latest
   resources:
     limits:
@@ -76,7 +76,7 @@ dataService:
   name: data-service
   port: 5003
   image:
-    repository: rohhann11/kubernetes-ml-app-data-service
+    repository: rohhann/kubernetes-ml-app-data-service
     tag: latest
   resources:
     limits:
@@ -93,7 +93,7 @@ frontend:
   containerPort: 80
   serviceType: LoadBalancer
   image:
-    repository: rohhann11/kubernetes-ml-app-frontend
+    repository: rohhann/kubernetes-ml-app-frontend
     tag: latest
   resources:
     limits:
